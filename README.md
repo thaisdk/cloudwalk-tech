@@ -72,8 +72,11 @@ Hi, welcome to Thais's (thaisdekassia1@gmail.com) software engineer test.
 
 This application is made with [Docker](https://github.com/docker/awesome-compose/tree/master/official-documentation-samples/rails/). To install do the following:
 
-1. Build your docker container with ```make up```
-2. Run the project seed ```make seed```
-3. You're done!
+1. Build your docker container with ```make build```
+2. After that run the project with ```make up```
+3. Open another terminal and run the project seed ```make seed```
+4. If you across opon perms issues while running make seed use this command
+  ```make perms```
+5. You're done!
 
 Now you can check at ```localhost:3000/api/v1/transactions```
