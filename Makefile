@@ -2,7 +2,7 @@ ARG := $(wordlist 2, $(words $(MAKECMDGOALS)), $(MAKECMDGOALS))
 $(eval $(ARG):;@true)
 
 build:
-	docker compose build
+	docker compose build --mo-cache
 
 up:
 	docker compose up

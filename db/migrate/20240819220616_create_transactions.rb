@@ -7,7 +7,7 @@ class CreateTransactions < ActiveRecord::Migration[7.2]
       t.string :card_number
       t.datetime :transaction_date
       t.decimal :transaction_amount
-      t.integer :device_id
+      t.string :device_id
       t.string :recommendation
       t.string :has_cbk
 

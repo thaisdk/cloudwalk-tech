@@ -2,6 +2,5 @@
 
 set -e
 
-bin/rails db:create
-bin/rails db:migrate
+rails db:create db:migrate
 bin/rails db:seed

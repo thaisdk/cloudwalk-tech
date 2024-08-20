@@ -1,4 +1,5 @@
 class Api::V1::TransactionsController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def index
     @transactions = Transaction.all
@@ -15,7 +16,6 @@ class Api::V1::TransactionsController < ApplicationController
  }, status: :ok
   end
 
-
   def create
     @transaction = Transaction.new(transaction_params)
     @transaction.evaluate_fraud
@@ -30,5 +30,6 @@ class Api::V1::TransactionsController < ApplicationController
   private def transaction_params
     params.require(:transaction).permit(:transaction_id, :merchant_id, :user_id, :card_number, :transaction_date, :transaction_amount, :device_id)
   end
+
 end
 

@@ -21,7 +21,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_19_220616) do
     t.string "card_number"
     t.datetime "transaction_date"
     t.decimal "transaction_amount"
-    t.integer "device_id"
+    t.string "device_id"
     t.string "recommendation"
     t.string "has_cbk"
     t.datetime "created_at", null: false

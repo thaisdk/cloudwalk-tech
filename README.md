@@ -79,4 +79,21 @@ This application is made with [Docker](https://github.com/docker/awesome-compose
   ```make perms```
 5. You're done!
 
-Now you can check at ```localhost:3000/api/v1/transactions```
+Now you can check at ```GET localhost:3000/api/v1/transactions```
+
+
+### Testing
+
+```POST localhost:3000/api/v1/transactions```
+
+```curl -X POST http://localhost:3000/api/v1/transactions \
+-H "Content-Type: application/json" \
+-d '{"transaction_id": 2342357, "merchant_id": 29744, "user_id": 97051, "card_number": "434505******9116", "transaction_date": "2019-11-31T23:16:32.812632", "transaction_amount": 373, "device_id": 285475 }'
+```
+
+Response
+```
+{
+    "transaction_id": 2342357,
+    "recommendation": "deny"
+}```
