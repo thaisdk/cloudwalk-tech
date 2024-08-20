@@ -1,6 +1,6 @@
 # CloudWalk's Software Engineer Test
 
-Hi, welcome to [Thaís's](thaisdekassia1@gmail.com) software engineer test. 
+Hi, welcome to Thais's (thaisdekassia1@gmail.com) software engineer test. 
 
 ## 3.1 - Understand the Industry
  
@@ -59,7 +59,7 @@ Hi, welcome to [Thaís's](thaisdekassia1@gmail.com) software engineer test.
     - Many transactions with an empty device_id `(830)`.
     - More denied transactions `(1949)` than approved ones`(1250)`
 
-  You can check does datas at `GET localhost:3000/api/v1/transactions`
+  You can check the data at `GET localhost:3000/api/v1/transactions`
 
 2. Possible fraud patterns include:
 
