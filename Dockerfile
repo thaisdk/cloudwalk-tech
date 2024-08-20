@@ -14,8 +14,6 @@ COPY entrypoint.sh /usr/bin/
 
 RUN chmod +x /usr/bin/entrypoint.sh
 
-RUN chmod u+x bin/rails
-
 ENTRYPOINT ["entrypoint.sh"]
 
 EXPOSE 3000
