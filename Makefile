@@ -2,7 +2,7 @@ ARG := $(wordlist 2, $(words $(MAKECMDGOALS)), $(MAKECMDGOALS))
 $(eval $(ARG):;@true)
 
 build:
-	docker compose build --mo-cache
+	docker compose build 
 
 up:
 	docker compose up
@@ -15,3 +15,6 @@ seed:
 
 perms:
 	chmod +x ./scripts/seed.sh
+
+test:
+	docker compose exec web bundle exec rspec
