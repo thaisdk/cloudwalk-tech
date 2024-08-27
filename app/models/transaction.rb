@@ -18,6 +18,8 @@ class Transaction < ApplicationRecord
   end
 
   def unusual_time_of_day?
+    return false if transaction_date.nil?
+
     transaction_date.hour < 6 || transaction_date.hour > 20
   end
 
